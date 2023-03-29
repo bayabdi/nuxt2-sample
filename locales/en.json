@@ -4,12 +4,7 @@
     },
 
     "rules": {
-        "name": "Name needed",
-        "surname": "Surname needed",
-        "email": "Email needed",
-        "bithday": "Age needed",
-        "password": "Password needed",
-        "passwordAgain": "Passwords are not same"
+        "required": "required field"
     },
     
     "name": "First name",
