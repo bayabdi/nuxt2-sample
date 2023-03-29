@@ -75,35 +75,43 @@
 
 <script>
 import {
-  // eslint-disable-next-line import/named
-  ValidationObserver,
-  // eslint-disable-next-line import/named
-  ValidationProvider
+    // eslint-disable-next-line import/named
+    ValidationObserver,
+    // eslint-disable-next-line import/named
+    ValidationProvider
 } from 'vee-validate'
 
 export default {
-  components: {
-    ValidationProvider,
-    ValidationObserver
-  },
-  data: () => ({
-    items: ['', 'Foo', 'Bar'],
-    name: '',
-    email: '',
-    select: '',
-    checkbox: ''
-  }),
-  methods: {
-    clear () {
-      this.name = this.email = this.select = this.checkbox = ''
-      this.$nextTick(() => {
-        this.$refs.obs.reset()
-      })
+    components: {
+        ValidationProvider,
+        ValidationObserver
     },
-    async submit () {
-      const result = await this.$refs.obs.validate()
-      console.log(result)
+
+    data: () => ({
+        items: ['', 'Foo', 'Bar'],
+        name: '',
+        email: '',
+        select: '',
+        checkbox: ''
+    }),
+
+    mounted () {
+        console.log(this.$store)
+        this.$store.dispatch('user/signUp', { text: 'asdasd' })
+    },
+
+    methods: {
+        clear () {
+            this.name = this.email = this.select = this.checkbox = ''
+            this.$nextTick(() => {
+                this.$refs.obs.reset()
+            })
+        },
+        async submit () {
+            const result = await this.$refs.obs.validate()
+            // eslint-disable-next-line no-console
+            console.log(result)
+        }
     }
-  }
 }
 </script>
