@@ -1,0 +1,22 @@
+{
+    "title": {
+        "SignPage": "Sign up to the platfrom"
+    },
+
+    "rules": {
+        "name": "Name needed",
+        "surname": "Surname needed",
+        "email": "Email needed",
+        "bithday": "Age needed",
+        "password": "Password needed",
+        "passwordAgain": "Passwords are not same"
+    },
+    
+    "name": "First name",
+    "surname": "Last name",
+    "email": "Email",
+    "birthday": "Date of birth",
+    "password": "Password",
+    "passwordAgain": "Password confirmation",
+    "signup": "Sign Up"
+}
