@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 export default {
     async signUp (state, { text }) {
         await console.log(text)

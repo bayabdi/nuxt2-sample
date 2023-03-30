@@ -1,0 +1,8 @@
+@import '@/node_modules/vuetify/dist/vuetify.css';
+@import './modules/font.scss';
+@import './modules/block.scss';
+@import './modules/button.scss';
+
+.v-text-field--outlined >>> fieldset {
+    border-color: rgba(192, 0, 250, 0.986) !important;
+}

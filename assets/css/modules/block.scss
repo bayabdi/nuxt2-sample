@@ -1,0 +1,38 @@
+@import "./variables-root.scss";
+
+.bg {
+  &-blue {
+    background-color: var(--color__blue) !important;
+  }
+  &-pink {
+    background-color: var(--color__pink) !important;
+  }
+  &-pink-light {
+    background-color: var(--color__pink-light) !important;
+  }
+  &-grey-light {
+    background-color: var(--color__grey-light) !important;
+  }
+}
+
+.w {
+  &-100 {
+    width: 100% !important;
+  }
+  &-80 {
+    width: 80% !important;
+  }
+  &-70 {
+    width: 70% !important;
+  }
+  &-60 {
+    width: 60% !important;
+  }
+  &-50 {
+    width: 50% !important;
+  }
+}
+
+.block-pointer {
+  cursor: pointer;
+}
